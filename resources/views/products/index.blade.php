@@ -57,10 +57,10 @@
                         @foreach ($products as $product)
                             <tr>
                                 <td>{{ $product->id }}</td>
-                                <td>{{ $product->lead }}</td>
-                                <td>{{ $product->heading }}</td>
+                                <td>{{ $product->model }}</td>
+                                <td>{{ $product->storage }}</td>
                                 <td>{{ $product->image }}</td>
-                                <td>{{ $product->desc }}</td>
+                                <td>{{ $product->price }}</td>
                                 <td>
                                     <form action="{{ route('products.destroy', $product->id) }}" method="POST">
                                         <a class="btn btn-info" href="{{ route('products.show', $product->id) }}">View</a>

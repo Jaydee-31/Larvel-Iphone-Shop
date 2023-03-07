@@ -29,14 +29,14 @@
             <div class="form-group row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <label for="lead">Lead</label>
-                        <input type="text" class="form-control" id="lead" name="lead" value="{{ $product->lead }}">
+                        <label for="model">Lead</label>
+                        <input type="text" class="form-control" id="model" name="model" value="{{ $product->model }}">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <label for="heading">Heading</label>
-                        <input type="text" class="form-control" id="heading" name="heading" value="{{ $product->heading }}">
+                        <label for="storage">Heading</label>
+                        <input type="text" class="form-control" id="storage" name="storage" value="{{ $product->storage }}">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -47,8 +47,8 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <label for="desc">Description</label>
-                        <textarea class="form-control" name="description" rows="7">{{ $product->desc }}</textarea>
+                        <label for="price">Description</label>
+                        <textarea class="form-control" name="description" rows="7">{{ $product->price }}</textarea>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">

@@ -31,13 +31,13 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Lead</strong>
-                        <input type="text" name="lead" class="form-control" placeholder="Lead" value="{{ old('lead') }}" autofocus>
+                        <input type="text" name="model" class="form-control" placeholder="Lead" value="{{ old('model') }}" autofocus>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Heading</strong>
-                        <input type="text" name="heading" class="form-control" placeholder="Heading" value="{{ old('heading') }}">
+                        <input type="text" name="storage" class="form-control" placeholder="Heading" value="{{ old('storage') }}">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -49,7 +49,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <strong>Desc</strong>
-                        <textarea  rows="6" type="text" name="desc" class="form-control" placeholder="Product description" value="{{ old('desc') }}"></textarea>
+                        <textarea  rows="6" type="text" name="price" class="form-control" placeholder="Product description" value="{{ old('price') }}"></textarea>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">

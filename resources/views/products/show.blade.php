@@ -17,13 +17,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Lead: </strong>
-                    {{ $product->lead }}
+                    {{ $product->model }}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Heading: </strong>
-                    {{ $product->heading }}
+                    {{ $product->storage }}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -37,7 +37,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Description: </strong>
-                    {{ $product->desc }}
+                    {{ $product->price }}
                 </div>
             </div>
         </div>

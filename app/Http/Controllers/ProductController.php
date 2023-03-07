@@ -18,13 +18,13 @@ class ProductController extends Controller
         // If a search query is present, filter the results
         if ($request->input('search')) {
             $searchQuery = $request->input('search');
-            $products->where('lead', 'LIKE', "%{$searchQuery}%")
-                ->orWhere('heading', 'LIKE', "%{$searchQuery}%")
+            $products->where('model', 'LIKE', "%{$searchQuery}%")
+                ->orWhere('storage', 'LIKE', "%{$searchQuery}%")
                 ->orWhere('image', 'LIKE', "%{$searchQuery}%")
-                ->orWhere('desc', 'LIKE', "%{$searchQuery}%");
+                ->orWhere('price', 'LIKE', "%{$searchQuery}%");
         }
 
-        $products = $products->paginate(3);
+        $products = $products->paginate(7);
 
         return view('products.index', compact('products'));
         
@@ -45,10 +45,10 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'lead' => 'required|string|max:30',
-            'heading' => 'required|string|max:30',
+            'model' => 'required|string|max:30',
+            'storage' => 'required|string|max:30',
             'image' => 'required|string|max:30',
-            'desc' => 'required|string'
+            'price' => 'required|string'
         ]);
     
         Product::create($request->all());
@@ -73,10 +73,10 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         $request->validate([
-            'lead' => 'required|string|max:30,' .$product->id,
-            'heading' => 'required|string|max:30',
+            'model' => 'required|string|max:30,' .$product->id,
+            'storage' => 'required|string|max:30',
             'image' => 'required|string|max:30',
-            'desc' => 'required|string'
+            'price' => 'required|string'
         ]);
 
         $product->update($request->all());
