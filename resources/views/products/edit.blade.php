@@ -48,7 +48,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
                         <label for="price">Description</label>
-                        <textarea class="form-control" name="description" rows="7">{{ $product->price }}</textarea>
+                        <input type="text" class="form-control" id="price" name="price" value="{{ $product->price }}">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">

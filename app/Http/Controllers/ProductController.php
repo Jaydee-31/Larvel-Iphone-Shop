@@ -73,16 +73,16 @@ class ProductController extends Controller
     public function update(Request $request, Product $product)
     {
         $request->validate([
-            'model' => 'required|string|max:30,' .$product->id,
+            'model' => 'required|string|max:30',
             'storage' => 'required|string|max:30',
             'image' => 'required|string|max:30',
             'price' => 'required|string'
         ]);
 
         $product->update($request->all());
-
+    
         return redirect()->route('products.index')
-            ->with('success','Product updated successfully');
+            ->with('success','Product updated successfully.');
     }
 
     public function destroy(Product $product)
